@@ -32,3 +32,7 @@ func FindAll() []models.Product {
 
 	return products
 }
+
+func Create() {
+
+}

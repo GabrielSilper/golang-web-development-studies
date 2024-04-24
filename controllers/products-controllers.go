@@ -12,3 +12,7 @@ func Index(resp http.ResponseWriter, req *http.Request) {
 	products := product_dao.FindAll()
 	temp.ExecuteTemplate(resp, "Index", products)
 }
+
+func New(resp http.ResponseWriter, req *http.Request) {
+	temp.ExecuteTemplate(resp, "New", nil)
+}
